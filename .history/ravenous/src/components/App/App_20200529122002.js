@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css';
 // import logo from './logo.svg';
 import BusinessList from '../BusinessList/BusinessList.js';
 import SearchBar from '../SearchBar/SearchBar.js';
+import './App.css';
 
 const business = {
   imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
@@ -16,15 +16,16 @@ const business = {
   reviewCount: 90
 };
 
-
-const businesses = [ business, business, business, business, business, business ];
+const businesses = [
+  business, business, business, business, business, business
+];
 
 function App() {
   return (
-    <div className="App">
+    <div class="App">
       <h1>ravenous</h1>
       <SearchBar />
-      <BusinessList  businesses = { businesses } /> 
+      <BusinessList businesses={businesses} /> 
     </div>
   );
 }

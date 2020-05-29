@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <h1>ravenous</h1>
       <SearchBar />
-      <BusinessList  businesses = { businesses } /> 
+      <BusinessList  /> 
     </div>
   );
 }

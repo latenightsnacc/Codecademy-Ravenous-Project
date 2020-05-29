@@ -9,9 +9,7 @@ class BusinessList extends React.Component {
     render() {
         return (
             <div className="BusinessList">
-                {this.props.businesses.map(business => {
-                    return <Business business = { business }/>;
-                })}
+                <Business />
             </div>
         );
     }

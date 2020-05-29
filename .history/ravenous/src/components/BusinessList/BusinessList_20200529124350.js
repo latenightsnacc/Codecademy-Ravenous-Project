@@ -3,15 +3,13 @@ import './BusinessList.css';
 import Business from '../Business/Business';
 
 class BusinessList extends React.Component {
-    // componentDidMount () {
-    //     console.log(this.props)
-    // }
+    componentDidMount () {
+        console.log(this.props)
+    }
     render() {
         return (
             <div className="BusinessList">
-                {this.props.businesses.map(business => {
-                    return <Business business = { business }/>;
-                })}
+                {/* <Business /> */}
             </div>
         );
     }
