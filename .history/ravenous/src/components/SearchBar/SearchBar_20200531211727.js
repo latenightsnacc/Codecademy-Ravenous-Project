@@ -48,7 +48,7 @@ class SearchBar extends React.Component {
     }
 
     handleSearch(e){
-        this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
+        this.searchYelp(this.state.term, this.state.location, this.state.sortBy);
         e.preventDefault();
     }
 
@@ -64,6 +64,7 @@ class SearchBar extends React.Component {
     render() {
         return (
             <div className="SearchBar">
+                {this.searchYelp}
                 <div className="SearchBar-sort-options">
                     <ul>
                         {this.renderSortByOptions}
